@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.66">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>Vuepress Actions Template | Vuepress Actions Template</title><meta name="description" content="Vuepress Documentation Deployment Template by Github Pages Actions">
+    <link rel="preload" href="/vuepress-actions-template/assets/style-ac11a92a.css" as="style"><link rel="stylesheet" href="/vuepress-actions-template/assets/style-ac11a92a.css">
+    <link rel="modulepreload" href="/vuepress-actions-template/assets/app-5013f5a7.js"><link rel="modulepreload" href="/vuepress-actions-template/assets/index.html-81a7a085.js"><link rel="modulepreload" href="/vuepress-actions-template/assets/index.html-75637217.js"><link rel="prefetch" href="/vuepress-actions-template/assets/404.html-f9875e7b.js" as="script"><link rel="prefetch" href="/vuepress-actions-template/assets/404.html-a858c1a1.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a aria-current="page" href="/vuepress-actions-template/" class="router-link-active router-link-exact-active"><!----><span class="site-name">Vuepress Actions Template</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">Vuepress Actions Template <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/vuepress-actions-template/#使用" class="router-link-active router-link-exact-active sidebar-item" aria-label="使用"><!--[--><!--]--> 使用 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="vuepress-actions-template" tabindex="-1"><a class="header-anchor" href="#vuepress-actions-template" aria-hidden="true">#</a> Vuepress Actions Template</h1><p>Github Pages template for Vuepress, Continuous Integration(CI) with Github Actions</p><h2 id="使用" tabindex="-1"><a class="header-anchor" href="#使用" aria-hidden="true">#</a> 使用</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># Https</span>
+<span class="token function">git</span> clone https://github.com/HenryZhuHR/vuepress-actions-template.git
+<span class="token comment"># Or SSH</span>
+<span class="token function">git</span> clone git@github.com:HenryZhuHR/vuepress-actions-template.git
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>本地预览文档</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">yarn</span> docs:dev
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>本地编译文档</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">yarn</span> docs:build
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改配置 <code>.github/workflows/docs.yarn.yml</code></p><ul><li><strong>CI 流程触发</strong>: <code>on</code> -&gt; <code>push</code> -&gt; <code>branches</code> 修改为触发 CI 流程的分支，默认为 <code>main</code></li><li><strong>部署分支</strong>: <code>jobs</code> -&gt; <code>docs</code> -&gt; <code>steps</code> -&gt; <code>Deploy to GitHub Pages</code> -&gt; <code>target_branch</code>，将编译的文档部署到指定分支，默认为 <code>gh-pages</code></li></ul><p>Github 上配置 Github Pages 相关流程，在项目的 <code>Settings</code> 中</p><ol><li><code>Actions</code> -&gt; <code>general</code> 中设置 Actions permissions ，修改 Workflow permissions 中，勾选 <code>Read and write permissions</code> 使得 actions 可以推送到分支 <code>gh-pages</code>(或者自定义的部署分支)</li></ol><p><img src="/vuepress-actions-template/assets/action-pemision-d532cce2.png" alt="Actions permissions"></p><ol><li><code>Pages</code> -&gt; <code>Source</code> 中 <code>Deploy from a branch</code>，然后 <code>Branch</code> 选择 <code>gh-pages</code>(或者自定义的部署分支)</li></ol><p><img src="/vuepress-actions-template/assets/pages-deploy-202bd1f2.png" alt="Pages Source"></p></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 296506195@qq.com">HenryZhuHR</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/vuepress-actions-template/assets/app-5013f5a7.js" defer></script>
+  </body>
+</html>
