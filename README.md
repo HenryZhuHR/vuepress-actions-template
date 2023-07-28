@@ -1,6 +1,12 @@
 # Vuepress Actions Template
 
+Vuepress 的 Github Pages 模板，使用 Github Actions 持续集成
+
 Github Pages template for Vuepress, Continuous Integration(CI) with Github Actions
+
+使用 yarn 作为包管理工具
+
+文档 
 
 ## 使用
 
@@ -27,8 +33,8 @@ yarn docs:build
 Github 上配置 Github Pages 相关流程，在项目的 `Settings` 中
 1. `Actions` -> `general` 中设置 Actions permissions ，修改 Workflow permissions 中，勾选 `Read and write permissions` 使得 actions 可以推送到分支 `gh-pages`(或者自定义的部署分支)
    
-![Actions permissions](./images/action-pemision.png)
+![Actions permissions](./docs/images/action-pemision.png)
 
-1. `Pages` -> `Source` 中 `Deploy from a branch`，然后 `Branch` 选择 `gh-pages`(或者自定义的部署分支)
+2. `Pages` -> `Source` 中 `Deploy from a branch`，然后 `Branch` 选择 `gh-pages`(或者自定义的部署分支)
 
-![Pages Source](./images/pages-deploy.png)
+![Pages Source](./docs/images/pages-deploy.png)
